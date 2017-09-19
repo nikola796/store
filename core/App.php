@@ -3,6 +3,10 @@
 namespace App\Core;
 
 
+
+
+use Exception;
+
 class App
 {
 

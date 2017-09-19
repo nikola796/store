@@ -36,13 +36,8 @@ class ComposerStaticInitcdcca3a1112aba7f12a49dff6d1130c3
     );
 
     public static $classMap = array (
-        'App\\Controllers\\DocumentsController' => __DIR__ . '/../..' . '/app/controllers/DocumentsController.php',
-        'App\\Controllers\\FilesController' => __DIR__ . '/../..' . '/app/controllers/FilesController.php',
-        'App\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/controllers/UsersController.php',
         'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
-        'App\\Core\\Exception' => __DIR__ . '/../..' . '/core/Exception.php',
         'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
-        'App\\Core\\UploadException' => __DIR__ . '/../..' . '/core/UploadException.php',
         'Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
         'PagesController' => __DIR__ . '/../..' . '/app/controllers/PagesController.php',
         'Phroute\\Dispatcher' => __DIR__ . '/..' . '/phroute/phroute/src/Phroute/Dispatcher.php',
@@ -58,22 +53,6 @@ class ComposerStaticInitcdcca3a1112aba7f12a49dff6d1130c3
         'Phroute\\RouteCollector' => __DIR__ . '/..' . '/phroute/phroute/src/Phroute/RouteCollector.php',
         'Phroute\\RouteParser' => __DIR__ . '/..' . '/phroute/phroute/src/Phroute/RouteParser.php',
         'QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
-        'StoPasswordReset' => __DIR__ . '/../..' . '/app/controllers/StoPasswordReset.php',
-        'Test' => __DIR__ . '/../..' . '/app/controllers/Test.php',
-        'UserController' => __DIR__ . '/../..' . '/app/controllers/UserController.php',
-        'app\\controllers\\AdminsController' => __DIR__ . '/../..' . '/app/controllers/AdminsController.php',
-        'app\\controllers\\AuthController' => __DIR__ . '/../..' . '/app/controllers/AuthController.php',
-        'app\\controllers\\DepartmentsController' => __DIR__ . '/../..' . '/app/controllers/DepartmentsController.php',
-        'app\\controllers\\FoldersController' => __DIR__ . '/../..' . '/app/controllers/FoldersController.php',
-        'app\\controllers\\ImportantController' => __DIR__ . '/../..' . '/app/controllers/ImportantController.php',
-        'app\\models\\Admin' => __DIR__ . '/../..' . '/app/models/Admin.php',
-        'app\\models\\Department' => __DIR__ . '/../..' . '/app/models/Department.php',
-        'app\\models\\File' => __DIR__ . '/../..' . '/app/models/File.php',
-        'app\\models\\Folder' => __DIR__ . '/../..' . '/app/models/Folder.php',
-        'app\\models\\Important' => __DIR__ . '/../..' . '/app/models/Important.php',
-        'app\\models\\Post' => __DIR__ . '/../..' . '/app/models/Post.php',
-        'app\\models\\User' => __DIR__ . '/../..' . '/app/models/User.php',
-        'core\\UploadException' => __DIR__ . '/../..' . '/core/UploadException.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
