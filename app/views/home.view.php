@@ -1,5 +1,13 @@
 <?php require('partials/header.php') ?>
 <?php
+foreach ($all_categories as $category){
+   $ar = $category['categories'];
+
+}
+echo '<pre>' . print_r($ar, true) . '</pre>';
+
+ //echo '<pre>' . print_r($all_categories, true) . '</pre>';
+die();
 //$collection = (new MongoDB\Client)->test->users;
 //dd($all_collections);
 //var_dump($all_collections);
