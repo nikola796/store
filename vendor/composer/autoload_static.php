@@ -8,10 +8,15 @@ class ComposerStaticInitcdcca3a1112aba7f12a49dff6d1130c3
 {
     public static $files = array (
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        '3a37ebac017bc098e9a86b35401e7a68' => __DIR__ . '/..' . '/mongodb/mongodb/src/functions.php',
         'bbb610b8ed3f906ac4e5bffda82f9e34' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'M' => 
+        array (
+            'MongoDB\\' => 8,
+        ),
         'A' => 
         array (
             'App\\Core\\' => 9,
@@ -19,6 +24,10 @@ class ComposerStaticInitcdcca3a1112aba7f12a49dff6d1130c3
     );
 
     public static $prefixDirsPsr4 = array (
+        'MongoDB\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mongodb/mongodb/src',
+        ),
         'App\\Core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/core',
@@ -36,10 +45,12 @@ class ComposerStaticInitcdcca3a1112aba7f12a49dff6d1130c3
     );
 
     public static $classMap = array (
+        'App\\Controllers\\CategoriesController' => __DIR__ . '/../..' . '/app/controllers/CategoriesController.php',
+        'App\\Controllers\\PagesController' => __DIR__ . '/../..' . '/app/controllers/PagesController.php',
         'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
         'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
+        'App\\Models\\Category' => __DIR__ . '/../..' . '/app/models/Category.php',
         'Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
-        'PagesController' => __DIR__ . '/../..' . '/app/controllers/PagesController.php',
         'Phroute\\Dispatcher' => __DIR__ . '/..' . '/phroute/phroute/src/Phroute/Dispatcher.php',
         'Phroute\\Dispatcher\\DispatcherTest' => __DIR__ . '/..' . '/phroute/phroute/test/Dispatcher/DispatcherTest.php',
         'Phroute\\Dispatcher\\Test' => __DIR__ . '/..' . '/phroute/phroute/test/Dispatcher/DispatcherTest.php',
