@@ -6,7 +6,7 @@
                 <div class="cbp-hrsub">
                     <div class="cbp-hrsub-inner">
                         <div>
-                            <h4>Learning &amp; Games</h4>
+                            <h4><a href="#"> Learning &amp; Games</a></h4>
                             <ul>
                                 <li><a href="#">Catch the Bullet</a></li>
                                 <li><a href="#">Snoopydoo</a></li>
