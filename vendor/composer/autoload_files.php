@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     '2c102faa651ef8ea5874edb585946bce' => $vendorDir . '/swiftmailer/swiftmailer/lib/swift_required.php',
+    '3a37ebac017bc098e9a86b35401e7a68' => $vendorDir . '/mongodb/mongodb/src/functions.php',
     'bbb610b8ed3f906ac4e5bffda82f9e34' => $vendorDir . '/swiftmailer/swiftmailer/lib/swift_required.php',
 );

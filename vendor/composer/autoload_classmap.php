@@ -6,10 +6,12 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Controllers\\CategoriesController' => $baseDir . '/app/controllers/CategoriesController.php',
+    'App\\Controllers\\PagesController' => $baseDir . '/app/controllers/PagesController.php',
     'App\\Core\\App' => $baseDir . '/core/App.php',
     'App\\Core\\Request' => $baseDir . '/core/Request.php',
+    'App\\Models\\Category' => $baseDir . '/app/models/Category.php',
     'Connection' => $baseDir . '/core/database/Connection.php',
-    'PagesController' => $baseDir . '/app/controllers/PagesController.php',
     'Phroute\\Dispatcher' => $vendorDir . '/phroute/phroute/src/Phroute/Dispatcher.php',
     'Phroute\\Dispatcher\\DispatcherTest' => $vendorDir . '/phroute/phroute/test/Dispatcher/DispatcherTest.php',
     'Phroute\\Dispatcher\\Test' => $vendorDir . '/phroute/phroute/test/Dispatcher/DispatcherTest.php',

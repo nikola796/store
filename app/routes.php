@@ -1,6 +1,8 @@
 <?php
 
-$router->get('', array('PagesController', 'home'));
+$router->get('', array('App\Controllers\CategoriesController', 'index'));
+
+$router->get('{category}', array('App\Controllers\CategoriesController', 'category'));
 
 
 
