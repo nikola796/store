@@ -27,10 +27,10 @@ class CategoriesController
 
     public function category($category)
     {
-        $all_collections = $this->category->all();
+        $all_categories = $this->category->all([],['name'=>1,'categories.name'=>1,'categories.categories.name'=>1, '_id'=>0]);
         $category_from_db = $this->category->findFromDB($category);
 
-        return view('category', compact('category_from_db', 'all_collections'));
+        return view('category', compact('category_from_db', 'all_categories'));
     }
 
 }

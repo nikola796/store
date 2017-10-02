@@ -25,11 +25,11 @@ class Category
      * @param null $param
      * @return mixed
      */
-    public function all($param = null)
+    public function all()
     {
-        ($param ? $cursor = $this->collection->find($param): $cursor = $this->collection->find());
+       // ($param ? $cursor = $this->collection->find($param): $cursor = $this->collection->find());
         //return $collection = (new Client)->test->users;
-        //$cursor = $this->collection->find();
+        $cursor = $this->collection->find([]);
         return $cursor;
     }
 
