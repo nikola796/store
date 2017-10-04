@@ -1,4 +1,4 @@
-<?php require('partials/header.php'); ?>
+ <?php require('partials/header.php'); ?>
 
 <!--<div role="navigation" aria-label="breadcrumb" style="margin-top:5%">-->
 <!--    <ol  itemtype="http://schema.org/BreadcrumbList" class="menu-breadcrumb menu-horz-inline baseline-small js-link-wrapper" data-via="breadcrumb">-->
