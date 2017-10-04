@@ -39,7 +39,7 @@ var cbpHorizontalMenu = (function() {
 
 			$item.addClass( 'cbp-hropen' );
 			current = idx;
-			$body.off( 'click' ).on( 'mouseleave', close );
+			$body.off( 'mouseleave' ).on( 'mouseleave', close );
 		}
 
 		return false;

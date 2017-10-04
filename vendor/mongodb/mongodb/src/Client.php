@@ -65,7 +65,7 @@ class Client
      * @throws DriverInvalidArgumentException for parameter/option parsing errors in the driver
      * @throws DriverRuntimeException for other driver errors (e.g. connection errors)
      */
-    public function __construct($uri = 'mongodb://10.30.128.159/', array $uriOptions = [], array $driverOptions = [])
+    public function __construct($uri = 'mongodb://127.0.0.1:27017/', array $uriOptions = [], array $driverOptions = [])
     {
         $driverOptions += ['typeMap' => self::$defaultTypeMap];
 

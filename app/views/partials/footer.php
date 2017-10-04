@@ -11,7 +11,7 @@
 <script src="<?= url()?>vendor/jquery/jquery.min.js"></script>
 <script src="<?= url()?>vendor/popper/popper.min.js"></script>
 <script src="<?= url()?>vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="<?= url()?>public/js/cbpHorizontalMenu.js"></script>
+<script src="<?= url()?>public/js/cbpHorizontalMenu.min.js"></script>
 <script>
     $(function() {
         cbpHorizontalMenu.init();

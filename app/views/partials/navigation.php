@@ -1,4 +1,4 @@
-<div class="main text-center">
+<div class="main">
     <nav id="cbp-hrmenu" class="cbp-hrmenu">
         <ul>
             <?php foreach ($all_categories as $categories): ?>
@@ -24,5 +24,5 @@
         </ul>
     </nav>
 </div>
-</div>
+
 

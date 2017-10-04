@@ -48,6 +48,7 @@
 	background: #47a3da;
 	width: 100%;
 	left: 0;
+	z-index: 9999;
 }
 
 .cbp-hropen .cbp-hrsub {
