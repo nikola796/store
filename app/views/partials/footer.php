@@ -11,9 +11,20 @@
 <script src="<?= url()?>vendor/jquery/jquery.min.js"></script>
 <script src="<?= url()?>vendor/popper/popper.min.js"></script>
 <script src="<?= url()?>vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="<?= url()?>public/js/cbpHorizontalMenu.min.js"></script>
+<script src="<?= url()?>public/js/cbpHorizontalMenu.js"></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script type="text/javascript" src="<?=url()?>public/js/libs/stellarnav.min.js"></script>
+
 <script>
+    jQuery(document).ready(function($) {
+        jQuery('.stellarnav').stellarNav({
+            theme: 'light'
+        });
+    });
     $(function() {
+
+
+
         cbpHorizontalMenu.init();
 
         $(document).on('mouseenter', '.products', function(){
