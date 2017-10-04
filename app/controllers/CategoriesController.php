@@ -33,4 +33,10 @@ class CategoriesController
         return view('category', compact('category_from_db', 'all_categories'));
     }
 
+    public function subcategory($category, $subcategory)
+    {
+        $category_from_db = $this->category->find(["categories.categories.parent_category_id" => $category.DIRECTORY_SEPARATOR.$subcategory]);
+        return view('category', compact('category_from_db', 'category'));
+    }
+
 }
