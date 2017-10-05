@@ -1,13 +1,9 @@
 
 <?php
-//$collection = (new MongoDB\Client)->test->users;
-//dd($category_from_db);
-//var_dump($all_collections);
+
 foreach ($category_from_db['categories'] as $document) {
    $sub_categories[] = $document;
 }
-//dd($sub_categories[0]);
-//var_dump($categ['name']);
 ?>
 <?php require('partials/header.php') ?>
 <!-- Page Content -->

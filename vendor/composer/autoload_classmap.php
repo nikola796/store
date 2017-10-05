@@ -8,9 +8,11 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Controllers\\CategoriesController' => $baseDir . '/app/controllers/CategoriesController.php',
     'App\\Controllers\\PagesController' => $baseDir . '/app/controllers/PagesController.php',
+    'App\\Controllers\\ProductsController' => $baseDir . '/app/controllers/ProductsController.php',
     'App\\Core\\App' => $baseDir . '/core/App.php',
     'App\\Core\\Request' => $baseDir . '/core/Request.php',
     'App\\Models\\Category' => $baseDir . '/app/models/Category.php',
+    'App\\Models\\Product' => $baseDir . '/app/models/Product.php',
     'Connection' => $baseDir . '/core/database/Connection.php',
     'Phroute\\Dispatcher' => $vendorDir . '/phroute/phroute/src/Phroute/Dispatcher.php',
     'Phroute\\Dispatcher\\DispatcherTest' => $vendorDir . '/phroute/phroute/test/Dispatcher/DispatcherTest.php',

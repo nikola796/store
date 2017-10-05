@@ -18,7 +18,8 @@
 <script>
     jQuery(document).ready(function($) {
         jQuery('.stellarnav').stellarNav({
-            theme: 'light'
+            theme: 'light',
+            breakpoint: 1366
         });
     });
     $(function() {

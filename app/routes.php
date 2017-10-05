@@ -10,6 +10,8 @@ $router->get('{category}', array('App\Controllers\CategoriesController', 'catego
 
 $router->get('{category}/{subcategory}', array('App\Controllers\CategoriesController', 'subcategory'));
 
+$router->get('{category}/{subcategory}/{products_parent}', array('App\Controllers\ProductsController', 'index'));
+
 
 
 
