@@ -3,3 +3,5 @@ config.php
 .idea/workspace.xml
 .htaccess
 core/files/
+vendor/mongodb/mongodb/src/Client.php
+
