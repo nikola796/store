@@ -42,14 +42,14 @@ if($sc['name'] == ucfirst($subcategory)){
 
             <div class="card-body">
                 <h4 class="card-title"><?= $sub_category['name'] ?></h4>
-                <img style="margin-bottom:2%" class="card-img-top" src="<?= url()?>public/images/<?= $sub_category['name'] ?>.jpg" alt="">
+                <img style="margin-bottom:2%" class="card-img-top" src="<?= url()?>public/images/<?= $sub_category['id'] ?>.jpg" alt="">
 
                 <h6 class="card-title"><?= $sub_category['page_title'] ?></h6>
                 <p class="card-text" style="text-align: justify"><?= $sub_category['page_description'] ?></p>
 
 
 
-                <a href="<?=url().str_replace('-', '/', $sub_category['id'])?>" class="btn btn-default products"  style="float: left;border:1px solid #444;border-radius: 20px;background: #ccc;color: #333">View Products</a>
+                <a href="<?=url().str_replace('-', '/', $sub_category['parent_category_id']) .'/'.str_replace($sub_category['parent_category_id'].'-', '', $sub_category['id'])?>" class="btn btn-default products"  style="float: left;border:1px solid #444;border-radius: 20px;background: #ccc;color: #333">View Products</a>
 
 
 

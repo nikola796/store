@@ -28,4 +28,11 @@ class Product
 
         return $cursor;
     }
+
+    public function findOne($param)
+    {
+
+        $cursor = $this->collection->findOne($param);
+        return $cursor;
+    }
 }
