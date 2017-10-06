@@ -19,25 +19,31 @@ class CategoriesController
         $this->category = new Category('store', 'categories');
     }
 
-    public function index()
+    /**
+     * Load categories
+     * @param $root_category
+     * @return mixed
+     * @internal param $category
+     */
+    public function category($root_category)
     {
-        $all_collections = $this->category->all();
-        return view('index', compact('all_collections'));
+
+        $category_from_db = $this->category->findFromDB($root_category);
+
+        return view('category', compact('category_from_db', 'root_category'));
     }
 
-    public function category($category)
+    /**
+     * LOAD SUBCATEGORIES
+     * @param $root_category
+     * @param $subcategory
+     * @return mixed
+     * @internal param $category
+     */
+    public function subcategory($root_category, $subcategory)
     {
-        $all_categories = $this->category->all([],['name'=>1,'categories.name'=>1,'categories.categories.name'=>1, '_id'=>0]);
-        $category_from_db = $this->category->findFromDB($category);
-
-        return view('category', compact('category_from_db', 'all_categories'));
-    }
-
-    public function subcategory($category, $subcategory)
-    {
-        $all_categories = $this->category->all([],['name'=>1,'categories.name'=>1,'categories.categories.name'=>1, '_id'=>0]);
-        $category_from_db = $this->category->find(['categories.categories.parent_category_id' => $category.'-'.$subcategory]);
-        return view('subcategories', compact('category_from_db', 'category', 'subcategory', 'all_categories'));
+        $category_from_db = $this->category->find(['categories.categories.parent_category_id' => $root_category.'-'.$subcategory]);
+        return view('subcategories', compact('category_from_db', 'root_category', 'subcategory'));
     }
 
 }

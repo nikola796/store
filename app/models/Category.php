@@ -21,6 +21,13 @@ class Category
         $this->collection = (new Client)->$db->$collection;
     }
 
+    public static function navigation()
+    {
+        $collection = (new Client)->store->categories;
+        $all_categories = $collection->find([],['name'=>1,'categories.name'=>1,'categories.categories.name'=>1, '_id'=>0]);
+        return $all_categories;
+    }
+
     /**
      * @param null $param
      * @return mixed

@@ -8,7 +8,7 @@ foreach ($category_from_db as $document) {
 
 foreach ($sub_cats as $sc){
     foreach ($sc['categories'] as $s)
-        if($s['parent_category_id'] == $category.'-'.$subcategory){
+        if($s['parent_category_id'] == $root_category.'-'.$subcategory){
             //$categories = $s['name']; // $s['parent_category_id']
             $cts[] = $s;
         }

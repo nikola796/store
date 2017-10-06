@@ -1,7 +1,7 @@
 <?php
 
 foreach ($parent_data['categories'] as $pk) {
-    if ($pk['id'] == $category . '-' . $subcategory) {
+    if ($pk['id'] == $root_category . '-' . $subcategory) {
         foreach ($pk['categories'] as $p) {
             if ($p['id'] == $parent) {
                 $ddd = $p;

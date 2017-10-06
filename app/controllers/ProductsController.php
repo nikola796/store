@@ -12,8 +12,7 @@ namespace App\Controllers;
 use App\Models\Category;
 use App\Models\Product;
 
-class ProductsController
-{
+class ProductsController {
     private $product;
 
 
@@ -22,30 +21,40 @@ class ProductsController
         $this->product = new Product('store', 'products');
     }
 
-    public function index($category,$subcategory,$product_parent)
+    /**
+     * GET ALL PRODUCTS FOR CATEGORY
+     * @param $category
+     * @param $subcategory
+     * @param $product_parent
+     * @return mixed
+     */
+    public function index($root_category, $subcategory, $product_parent)
     {
         $cat = new Category('store', 'categories');
 
-        $all_categories = $cat->all([],['name' => 1, 'id'=>1,'categories.id'=>1, 'categories.name'=>1, 'categories.categories.id'=>1, 'categories.categories.name'=>1, '_id'=>0]);
+        $parent = $root_category . '-' . $subcategory . '-' . $product_parent;
 
-        $parent = $category.'-'.$subcategory.'-'.$product_parent;
-
-        $parent_data = $cat->findOne(['categories.categories.id' => $parent],['']);
-
-
+        $parent_data = $cat->findOne(['categories.categories.id' => $parent], ['']);
 
         $products = $this->product->find(['primary_category_id' => $parent]);
 
         $pr = $products->toArray();
-        if(count($pr) == 0){
+        if (count($pr) == 0)
+        {
             $products = $this->product->find(['primary_category_id' => $product_parent]);
             $pr = $products->toArray();
         }
-        //$cnt = $this->product->count(['primary_category_id' => $parent]);
 
-        return view('products', compact('parent','category','subcategory','product_parent','products', 'pr', 'all_categories', 'parent_data','pd'));
+        return view('products', compact('parent', 'root_category', 'subcategory', 'product_parent', 'products', 'pr', 'all_categories', 'parent_data', 'pd'));
     }
 
+    /** GET SELECTED PRODUCT
+     * @param $category
+     * @param $subcategory
+     * @param $products_parent
+     * @param $product_id
+     * @return mixed
+     */
     public function show($category, $subcategory, $products_parent, $product_id)
     {
         $product = $this->product->findOne(['id' => $product_id]);
