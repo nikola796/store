@@ -47,9 +47,11 @@ class ComposerStaticInitcdcca3a1112aba7f12a49dff6d1130c3
     public static $classMap = array (
         'App\\Controllers\\CategoriesController' => __DIR__ . '/../..' . '/app/controllers/CategoriesController.php',
         'App\\Controllers\\PagesController' => __DIR__ . '/../..' . '/app/controllers/PagesController.php',
+        'App\\Controllers\\ProductsController' => __DIR__ . '/../..' . '/app/controllers/ProductsController.php',
         'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
         'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
         'App\\Models\\Category' => __DIR__ . '/../..' . '/app/models/Category.php',
+        'App\\Models\\Product' => __DIR__ . '/../..' . '/app/models/Product.php',
         'Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
         'Phroute\\Dispatcher' => __DIR__ . '/..' . '/phroute/phroute/src/Phroute/Dispatcher.php',
         'Phroute\\Dispatcher\\DispatcherTest' => __DIR__ . '/..' . '/phroute/phroute/test/Dispatcher/DispatcherTest.php',

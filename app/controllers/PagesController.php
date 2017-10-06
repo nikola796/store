@@ -6,6 +6,7 @@ use App\Models\Category;
 class PagesController
 {
 
+
     public function index()
     {
 

@@ -12,5 +12,13 @@ $router->get('{category}/{subcategory}', array('App\Controllers\CategoriesContro
 
 
 
+$router->get('{category}/{subcategory}/{products_parent}', array('App\Controllers\ProductsController', 'index'));
+
+$router->get('{category}/{subcategory}/{products_parent}/{product_id}', array('App\Controllers\ProductsController', 'show'));
+
+
+
+
+
 
 

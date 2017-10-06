@@ -1,23 +1,19 @@
 
 <?php
-//$collection = (new MongoDB\Client)->test->users;
-//dd($category_from_db);
-//var_dump($all_collections);
+
 foreach ($category_from_db['categories'] as $document) {
    $sub_categories[] = $document;
 }
-//dd($sub_categories[0]);
-//var_dump($categ['name']);
 ?>
 <?php require('partials/header.php') ?>
 <!-- Page Content -->
 
 
     <!-- Jumbotron Header -->
- <header class="jumbotron my-4">
-       <h4 class="display-6"><?= $category_from_db['page_title']?></h4>
-       <p class="lead"><?= $category_from_db['page_description']?></p>
-    </header>
+<header class="jumbotron my-4">
+    <h4 class="display-6"><?= $category_from_db['page_title'] ?></h4>
+    <p class="lead"><?= $category_from_db['page_description'] ?></p>
+</header>
 
     <header class="jumbotron my-4" style="background: #fff;">
 
