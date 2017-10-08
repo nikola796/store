@@ -33,8 +33,14 @@ class ProductsController {
         $cat = new Category('store', 'categories');
 
         $parent = $root_category . '-' . $subcategory . '-' . $product_parent;
-
+//dd($product_parent);
         $parent_data = $cat->findOne(['categories.categories.id' => $parent], ['']);
+
+        if(count($parent_data) == 0){
+            $parent_data = $cat->findOne(['categories.categories.id' => $product_parent], ['']);
+        }
+
+
 
         $products = $this->product->find(['primary_category_id' => $parent]);
 
@@ -55,11 +61,11 @@ class ProductsController {
      * @param $product_id
      * @return mixed
      */
-    public function show($category, $subcategory, $products_parent, $product_id)
+    public function show($root_category, $subcategory, $product_parent, $product_id)
     {
         $product = $this->product->findOne(['id' => $product_id]);
 
-        return view('show', compact('product'));
+        return view('show', compact('product', 'root_category', 'subcategory', 'product_parent', 'product_id'));
 
     }
 

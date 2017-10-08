@@ -29,7 +29,9 @@ class CategoriesController
     {
 
         $category_from_db = $this->category->findFromDB($root_category);
-
+if(count($category_from_db) == 0){
+    return view(404);
+}
         return view('category', compact('category_from_db', 'root_category'));
     }
 

@@ -17,11 +17,6 @@ if($sc['name'] == ucfirst($subcategory)){
 }
 }
 
-//echo $ccc['page_title'].'<br>';
-//echo $ccc['page_description'];
-//var_dump($subcategory);
-//echo '<pre>' . print_r($ccc, true) . '</pre>';
-//die();
 ?>
 <?php require('partials/header.php') ?>
 <!-- Page Content -->
@@ -29,8 +24,8 @@ if($sc['name'] == ucfirst($subcategory)){
 
 <!-- Jumbotron Header -->
 <header class="jumbotron my-4">
-    <h4 class="display-6"><?= $ccc['page_title']?></h4>
-    <p class="lead"><?= $ccc['page_description']?></p>
+    <h3 class=""><?= $ccc['page_title']?></h3>
+    <p><?= $ccc['page_description']?></p>
 </header>
 
 <header class="jumbotron my-4" style="background: #fff;">

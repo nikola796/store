@@ -1,14 +1,18 @@
 <?php
-
+//echo 'root -> '.$root_category .' // subcategory -> '.$subcategory.' // product parent -> '.$product_parent.' //'. $parent;//die();
+//dd($subcategory);
 foreach ($parent_data['categories'] as $pk) {
     if ($pk['id'] == $root_category . '-' . $subcategory) {
         foreach ($pk['categories'] as $p) {
-            if ($p['id'] == $parent) {
+            if ($p['id'] == $parent OR $p['id'] == $product_parent) {
                 $ddd = $p;
             }
         }
     }
+ //   echo '<pre>' . print_r($pk, true) . '</pre>';die();
 }
+
+//echo '<pre>' . print_r($parent_data, true) . '</pre>';die();
 ?>
 <?php include('partials/header.php') ?>
 
@@ -16,8 +20,8 @@ foreach ($parent_data['categories'] as $pk) {
     <div class="col-12">
         <!-- Jumbotron Header -->
         <header class="jumbotron">
-            <h4 class="display-6"><?= $ddd['page_title'] ?></h4>
-            <p class="lead"><?= $ddd['page_description'] ?></p>
+            <h3 class=""><?= $ddd['page_title'] ?></h3>
+            <p><?= $ddd['page_description'] ?></p>
         </header>
     </div>
 </div>

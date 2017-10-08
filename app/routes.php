@@ -2,6 +2,14 @@
 
 $router->get('', array('App\Controllers\PagesController', 'index'));
 
+$router->get('lara', function(){
+    return view('lara');
+});
+
+$router->get('vadi', function(){
+    return view('vadi');
+});
+
 $router->get('home', array('App\Controllers\PagesController', 'home'));
 
 $router->get('stella', array('App\Controllers\PagesController', 'stella'));
