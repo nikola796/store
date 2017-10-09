@@ -15,9 +15,10 @@
 
             <div class="card-body">
                 <h4 class="card-title"><?= $sub_category['name'] ?></h4>
-                <img style="margin-bottom:2%" class="card-img-top"
-                     src="<?= url() ?>public/images/<?= $sub_category['id'] ?>.jpg" alt="">
-
+                <a href="<?= url() . str_replace('-', '/', $sub_category['id']) ?>">
+                    <img style="margin-bottom:2%" class="card-img-top"
+                         src="<?= url() ?>public/images/<?= $sub_category['id'] ?>.jpg" alt="">
+                </a>
                 <h6 class="card-title"><?= $sub_category['page_title'] ?></h6>
                 <p class="card-text" style="text-align: justify"><?= $sub_category['page_description'] ?></p>
 

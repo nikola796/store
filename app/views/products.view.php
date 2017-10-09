@@ -14,7 +14,9 @@
     <?php foreach ($product_array as $p): ?>
         <div class="col-lg-3 col-md-6 mb-4">
             <div class="card">
-                <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+                <a href="<?= url() . $parent ?>/<?= $p['id'] ?>">
+                    <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+                </a>
                 <div class="card-body">
                     <h4 class="card-title"><?= $p['name'] ?></h4>
                     <p class="card-text"><?= $p['short_description'] ?></p>
