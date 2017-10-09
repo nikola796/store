@@ -11,8 +11,7 @@ namespace App\Models;
 
 use MongoDB\Client;
 
-class Product
-{
+class Product {
 
     private $collection;
 
@@ -21,18 +20,27 @@ class Product
         $this->collection = (new Client)->$db->$collection;
     }
 
+    /** Get All products from database with option for adding parameters
+     * @param null $param
+     * @return \MongoDB\Driver\Cursor
+     */
     public function find($param = null)
     {
 
-        ($param ? $cursor = $this->collection->find($param): $cursor = $this->collection->find());
+        ($param ? $cursor = $this->collection->find($param) : $cursor = $this->collection->find());
 
         return $cursor;
     }
 
+    /** Get one product from database by added parameter
+     * @param $param
+     * @return array|null|object
+     */
     public function findOne($param)
     {
 
         $cursor = $this->collection->findOne($param);
+
         return $cursor;
     }
 }
