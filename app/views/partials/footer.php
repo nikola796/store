@@ -1,10 +1,12 @@
 </div>
+
 <!-- Footer -->
-<footer class="py-5 bg-dark">
+<footer class="footer">
     <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <div class="copy text-center">
+            <p class="m-0 text-center text-white">Copyright &copy; <a href="<?= url() ?>">Store Name</a> 2017</p>
+        </div>
     </div>
-    <!-- /.container -->
 </footer>
 
 <!-- Bootstrap core JavaScript -->

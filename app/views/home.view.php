@@ -1,79 +1,47 @@
-<?php require('partials/header.php');?>
-<!-- Page Content -->
+<?php require('partials/header.php'); ?>
 
+<!-- Jumbotron Header -->
+<header class="jumbotron my-4">
+    <h3 class="">Build Store Task</h3>
+    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt
+        possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam
+        repellat.</p>
+</header>
+<!-- END Jumbotron Header -->
 
-    <!-- Jumbotron Header -->
-    <!--<header class="row" style="background: #fff">-->
-    <!--    <h1 class="display-3">Welcome to Store!</h1>-->
-    <!--    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>-->
-       <!--<a href="#" class="btn btn-primary btn-lg">Call to action!</a>-->
-    <!--</header>-->
-
-    <!-- Page Features -->
-    <div class="row">
-        <!--<img class="img-responsive" style="margin: 2% auto" src="public/images/boy.jpg">-->
-        <!---->
-        <!-- <img class="img-responsive" style="margin: 2% auto" src="public/images/girl.jpg">-->
+<!-- Page Features -->
+<div class="row" style="margin: 2% auto">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+        <div class="card">
+            <a href="<?= url() ?>womens">
+                <img class="card-img-top"
+                     src="http://row.jimmychoo.com/on/demandware.static/-/Library-Sites-jch-shared-general/default/dwe2ca918a/2017/homepage/wk38/gbrow/HP-UK-WW-hero@2x.jpeg"
+                     alt="">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title"><a href="<?= url() ?>womens">Womens</a></h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                    necessitatibus neque.</p>
+            </div>
+        </div>
     </div>
-        <!--    <div class="card">-->
-
-        <!--        <div class="card-body">-->
-        <!--            <h4 class="card-title">Card title</h4>-->
-        <!--            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>-->
-        <!--        </div>-->
-        <!--        <div class="card-footer">-->
-        <!--            <a href="#" class="btn btn-primary">Find Out More!</a>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</div>-->
-        <!---->
-        <!--<div class="col-lg-5 ">-->
-        <!--    <div class="card">-->
-        <!--        <img style="height: 500px;" class="card-img-top" src="--><?//=url()?><!--public/images/man.jpg" alt="Men Fashion">-->
-        <!--        <div class="card-body">-->
-        <!--            <h4 class="card-title">Card title</h4>-->
-        <!--            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>-->
-        <!--        </div>-->
-        <!--        <div class="card-footer">-->
-        <!--            <a href="#" class="btn btn-primary">Find Out More!</a>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</div>-->
-<!---->
-<!--        <div class="col-lg-3 col-md-6 mb-4">-->
-<!--            <div class="card">-->
-<!--                <img class="card-img-top" src="http://placehold.it/500x325" alt="">-->
-<!--                <div class="card-body">-->
-<!--                    <h4 class="card-title">Card title</h4>-->
-<!--                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>-->
-<!--                </div>-->
-<!--                <div class="card-footer">-->
-<!--                    <a href="#" class="btn btn-primary">Find Out More!</a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="col-lg-3 col-md-6 mb-4">-->
-<!--            <div class="card">-->
-<!--                <img class="card-img-top" src="http://placehold.it/500x325" alt="">-->
-<!--                <div class="card-body">-->
-<!--                    <h4 class="card-title">Card title</h4>-->
-<!--                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>-->
-<!--                </div>-->
-<!--                <div class="card-footer">-->
-<!--                    <a href="#" class="btn btn-primary">Find Out More!</a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-
+    <div class="col-md-5">
+        <div class="card">
+            <a href="<?= url() ?>mens">
+                <img class="card-img-top"
+                     src="http://row.jimmychoo.com/on/demandware.static/-/Library-Sites-jch-shared-general/default/dwc1c9e970/2017/homepage/wk28/UK/HP-UK-MW-1@2x.jpeg"
+                     alt="">
+            </a>
+            <div class="card-body">
+                <h4 class="card-title"><a href="<?= url() ?>mens">Mens</a></h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                    necessitatibus neque.</p>
+            </div>
+        </div>
     </div>
-    <!-- /.row -->
+    <div class="col-md-1"></div>
 
-
-<!-- /.container -->
-
+</div>
+<!-- End Page Features -->
 <?php require('partials/footer.php') ?>
-
-
-
-

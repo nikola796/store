@@ -52,9 +52,19 @@
         </div>
     </div>
 </nav>
-
+<style>
+    footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        background-color: #efefef;
+        text-align: center;
+    }
+</style>
 @yield('content')
-
+<footer>This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</footer>
 <!-- Scripts -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>

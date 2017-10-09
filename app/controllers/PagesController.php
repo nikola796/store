@@ -20,9 +20,7 @@ class PagesController
      */
     public function home()
     {
-
-        return view('stella');
-
+        return view('home');
     }
 
 }

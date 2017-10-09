@@ -24,7 +24,6 @@
     <!-- Custom styles for this template -->
     <link href="<?= url() ?>public/css/heroic-features.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?= url() ?>public/css/default.css"/>
-    <!--<link rel="stylesheet" type="text/css" href="--><?//= url() ?><!--public/css/app.css"/>-->
     <link rel="stylesheet" type="text/css" href="<?= url() ?>public/css/component.css"/>
     <link href="<?= url() ?>public/css/styles.css" rel="stylesheet">
     <script src="<?= url() ?>public/js/modernizr.custom.js"></script>
