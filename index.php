@@ -1,5 +1,5 @@
 <?php
-//phpinfo();
+
 require 'vendor/autoload.php';
 
 require 'core/bootstrap.php';
@@ -23,10 +23,8 @@ try {
 
 } catch (Phroute\Exception\HttpRouteNotFoundException $e) {
 
-   // var_dump($e);
-   // die();
-//header('Location: '. url().'404');
     return view('404');
+
 exit();
 }
 
