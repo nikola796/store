@@ -19,7 +19,7 @@
                 <h4 class="card-title"><?= $product['name'] ?></h4>
                 <p class="card-text"><?= $product['short_description'] ?></p>
                 <span class="text-right" style="float: right"><strong>Price: <span
-                                id="price"><?= $product['price'] ?> </span></strong><select id="currency"><option
+                                id="price"><?= $product['price'] ?> </span></strong> <select id="currency"><option
                                 value="1"><?= $product['currency'] ?></option> </select></span>
                 <input id="price_hidden" type="hidden" value="<?= $product['price'] ?>">
             </div>

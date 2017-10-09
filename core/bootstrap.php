@@ -1,17 +1,7 @@
 <?php
 
-use App\Core\App;
-
-//App::bind('config', require 'config.php');
 
 require_once 'core/session.php';
-
-//$conf = App::get('config');
-//App::bind('database', new QueryBuilder(
-
-//	Connection::make($conf['database'])
-
-//));
 
 
 function view($name, $data = array())
