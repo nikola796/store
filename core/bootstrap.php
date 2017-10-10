@@ -34,9 +34,9 @@ function dd($data){
 function url()
 {
     if ($_SERVER['SERVER_PORT'] != '443') {
-        $URL = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF'];
+        $URL = 'http://' . $_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT'] . $_SERVER['PHP_SELF'];
     } else {
-        $URL = 'https://' . $_SERVER['SERVER_NAME'] . $_SERVER['PHP_SELF'];
+        $URL = 'https://' . $_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT'] . $_SERVER['PHP_SELF'];
     }
     return substr( $URL, 0,-9);
 }
