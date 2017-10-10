@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /store_task/
+RewriteBase /store/
 RewriteCond $1 !^(public)
 RewriteCond $1 !^(vendor)
 RewriteRule ^(.+)$ index.php [QSA,L]
