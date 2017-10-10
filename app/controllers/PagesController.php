@@ -11,7 +11,7 @@ class PagesController
      */
     public function index()
     {
-        return redirect('home', compact('all_categories'));
+        return redirect('home');
     }
 
     /**
